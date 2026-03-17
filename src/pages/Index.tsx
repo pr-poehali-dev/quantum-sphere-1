@@ -4,77 +4,97 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">НЕЙРО*ДРУЗЬЯ</div>
         <nav>
-          <a href="#">Меню</a>
+          <a href="#">Рубрики</a>
           <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Инструменты</a>
+          <a href="#">Сообщество</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <a
+          href="https://vk.com/neuro_friends"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-cta"
+        >
+          Вступить в ВК
+        </a>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              БЕЗ СКУКИ,
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              ТОЛЬКО <span>НЕЙРО</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Сообщество ВКонтакте, где нейросети — это вкусно и полезно. Обзоры инструментов, лайфхаки и живое общение с теми, кто тоже в теме.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-              <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
-              </button>
+              <a
+                href="https://vk.com/neuro_friends"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-cta"
+                style={{ background: "var(--primary)", color: "white" }}
+              >
+                Вступить бесплатно
+              </a>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Смотреть рубрики
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div
+            className="hero-img"
+            style={{
+              backgroundImage: `url("https://cdn.poehali.dev/projects/d357ecae-e6ec-46d7-8b7d-1b0974681297/files/92f42815-832a-43d5-9a66-63cbec70cfc5.jpg")`,
+            }}
+          >
             <div className="sticker">
               СВЕЖАК
               <br />
               КАЖДЫЙ ДЕНЬ
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #НЕЙРОСЕТИ
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              🔥 ВАЙБ
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * CHATGPT * MIDJOURNEY * CLAUDE * SORA * GEMINI * НЕЙРО-ЛАЙФХАКИ * AI-ИНСТРУМЕНТЫ * ПРОМПТЫ * ОБЗОРЫ *
+            CHATGPT * MIDJOURNEY * CLAUDE * SORA * GEMINI * НЕЙРО-ЛАЙФХАКИ * AI-ИНСТРУМЕНТЫ * ПРОМПТЫ * ОБЗОРЫ
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">ТОП РУБРИКИ</h2>
             <a
-              href="#"
+              href="https://vk.com/neuro_friends"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm md:text-base"
               style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
             >
-              Всё меню
+              Все посты →
             </a>
           </div>
 
           <div className="menu-grid">
-            {/* Item 1 */}
+            {/* Card 1 */}
             <div className="menu-card">
-              <span className="menu-tag">Хит продаж</span>
+              <span className="menu-tag">Хит недели</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://cdn.poehali.dev/projects/d357ecae-e6ec-46d7-8b7d-1b0974681297/files/9848884d-708b-42e7-a2df-ee8d7a192e04.jpg"
+                alt="Обзоры инструментов"
               />
               <div className="menu-card-body">
                 <div
@@ -85,23 +105,23 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Обзоры AI-инструментов</h3>
+                  <span className="price">🔥</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Честные разборы ChatGPT, Midjourney, Claude и других — что реально работает, а что хайп.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
+            {/* Card 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+                Практика
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://cdn.poehali.dev/projects/d357ecae-e6ec-46d7-8b7d-1b0974681297/files/d5a7108a-e3a8-45a0-bb92-99726cd5494b.jpg"
+                alt="Промпты и лайфхаки"
               />
               <div className="menu-card-body">
                 <div
@@ -112,21 +132,21 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Промпты и лайфхаки</h3>
+                  <span className="price">💡</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Готовые промпты, которые экономят часы работы. Берёшь и пользуешься.</p>
               </div>
             </div>
 
-            {/* Item 3 */}
+            {/* Card 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Популярное
+                Тренды
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://cdn.poehali.dev/projects/d357ecae-e6ec-46d7-8b7d-1b0974681297/files/92f42815-832a-43d5-9a66-63cbec70cfc5.jpg"
+                alt="Новинки AI"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +157,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Новинки и новости AI</h3>
+                  <span className="price">🚀</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Что вышло, что взорвало интернет и почему это важно — без лишней воды.
                 </p>
               </div>
             </div>
@@ -152,43 +172,48 @@ export default function Index() {
           <div>
             <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Мы не просто постим про нейросети. Мы создаём комьюнити, где каждый — от новичка до эксперта — чувствует себя своим. Живые обсуждения, мемы, разборы и поддержка. Заходи без пароля, просто с интересом.
             </p>
-            <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
-              Наша история
-            </button>
+            <a
+              href="https://vk.com/neuro_friends"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-cta"
+              style={{ background: "var(--dark)", color: "white", borderColor: "white", display: "inline-block" }}
+            >
+              Вступить в сообщество
+            </a>
           </div>
           <div className="vibe-img"></div>
         </section>
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @НЕЙРО_ДРУЗЬЯ
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="AI арт"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Нейросеть"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://images.unsplash.com/photo-1675557009285-b56e5b7e5a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="AI генерация"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Технологии"
               />
             </div>
           </div>
@@ -197,9 +222,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">НЕЙРО*ДРУЗЬЯ</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Сообщество ВКонтакте о нейросетях, AI-инструментах и технологиях будущего. Вкусно, полезно и без занудства.
           </p>
         </div>
         <div className="footer-links">
@@ -207,7 +232,12 @@ export default function Index() {
           <ul>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Меню
+                Рубрики
+              </a>
+            </li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Инструменты
               </a>
             </li>
             <li>
@@ -216,30 +246,25 @@ export default function Index() {
               </a>
             </li>
             <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
-              </a>
-            </li>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+              <a href="https://vk.com/neuro_friends" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>
+                ВКонтакте
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-links">
-          <h4>Часы работы</h4>
+          <h4>Часы активности</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Пн — Пт: 09:00 — 22:00</li>
+            <li>Сб — Вс: 10:00 — 20:00</li>
+            <li style={{ marginTop: "10px", color: "var(--primary)", fontWeight: 800 }}>
+              Посты каждый день!
+            </li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div>
+          <p style={{ color: "#666", fontSize: "14px" }}>© 2024 Нейро-друзья. Все права защищены.</p>
+          <p style={{ color: "#666", fontSize: "14px", marginTop: "5px" }}>Сделано с ❤️ и нейросетями</p>
         </div>
       </footer>
     </>
